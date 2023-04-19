@@ -1,10 +1,19 @@
 ﻿Console.Clear();
 
-double count = 0, distance = 10000, firstFriendSpeed = 1,
-    secondFriendSpeed = 2, dogSpeed = 5, friend = 2, time ;
+double count, distance, firstFriendSpeed, secondFriendSpeed, 
+       dogSpeed, time;
 
-while (distance > 10)
-{
+int friend;
+
+count = 0;
+distance = 100; 
+firstFriendSpeed = 1;
+secondFriendSpeed = 2; 
+dogSpeed = 5;
+friend = 1;
+time = 0;
+
+while (distance > 10) {
 
     if (friend == 1)
     
@@ -13,7 +22,7 @@ while (distance > 10)
         friend = 2;
     }
 
-    else 
+    else
     
     {
         time = distance / (secondFriendSpeed + dogSpeed);
@@ -21,10 +30,8 @@ while (distance > 10)
     }
 
 distance = distance-(firstFriendSpeed+secondFriendSpeed)*time;
-count = count++;
+count++;
 
 }
 
-Console.Write("Собака пробежит ");
-Console.Write(count);
-Console.Write(" раз");
+Console.Write($"Собака пробежит {count} раз");
