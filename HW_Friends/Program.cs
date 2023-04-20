@@ -1,4 +1,9 @@
-﻿Console.Clear();
+using System;
+
+class People {
+static void Main() {
+
+Console.Clear();
 
 double count, distance, firstFriendSpeed, secondFriendSpeed, 
        dogSpeed, time;
@@ -6,7 +11,7 @@ double count, distance, firstFriendSpeed, secondFriendSpeed,
 int friend;
 
 count = 0;
-distance = 100; 
+distance = 60000; 
 firstFriendSpeed = 1;
 secondFriendSpeed = 2; 
 dogSpeed = 5;
@@ -33,5 +38,34 @@ distance = distance-(firstFriendSpeed+secondFriendSpeed)*time;
 count++;
 
 }
+    
+    if (count%10 == 2 && count != 12)
+    
+    Console.Write($"Собака пробежит {count} раза");
 
-Console.Write($"Собака пробежит {count} раз");
+    if (count%10 == 3 && count != 13)
+    
+    Console.Write($"Собака пробежит {count} раза");
+!
+    if (count%10 == 4 && count != 14)
+    
+    Console.Write($"Собака пробежит {count} раза");
+
+    if (count == 12)
+    
+    Console.Write($"Собака пробежит {count} раз");
+
+    if (count == 13)
+    
+    Console.Write($"Собака пробежит {count} раз");
+    
+    if (count == 14)
+    
+    Console.Write($"Собака пробежит {count} раз");
+    
+    else
+    
+    Console.Write($"Собака пробежит {count} раз");
+
+  }
+}
