@@ -46,7 +46,7 @@ count++;
     if (count%10 == 3 && count != 13)
     
     Console.Write($"Собака пробежит {count} раза");
-!
+
     if (count%10 == 4 && count != 14)
     
     Console.Write($"Собака пробежит {count} раза");
