@@ -11,7 +11,7 @@ double count, distance, firstFriendSpeed, secondFriendSpeed,
 int friend;
 
 count = 0;
-distance = 60000; 
+distance = 5555; 
 firstFriendSpeed = 1;
 secondFriendSpeed = 2; 
 dogSpeed = 5;
@@ -39,33 +39,19 @@ count++;
 
 }
     
-    if (count%10 == 2 && count != 12)
+    if (count % 10 == 2 & count != 12 ^ 
+        count % 10 == 3 & count != 13 ^
+        count % 10 == 4 & count != 14)
     
+    {
     Console.Write($"Собака пробежит {count} раза");
-
-    if (count%10 == 3 && count != 13)
+    }
     
-    Console.Write($"Собака пробежит {count} раза");
-
-    if (count%10 == 4 && count != 14)
+    else 
     
-    Console.Write($"Собака пробежит {count} раза");
-
-    if (count == 12)
-    
+    {
     Console.Write($"Собака пробежит {count} раз");
-
-    if (count == 13)
-    
-    Console.Write($"Собака пробежит {count} раз");
-    
-    if (count == 14)
-    
-    Console.Write($"Собака пробежит {count} раз");
-    
-    else
-    
-    Console.Write($"Собака пробежит {count} раз");
+    }
 
   }
 }
